@@ -3,7 +3,7 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: `Express ${process.env.OTEL_EXPORTER_OTLP}` });
+  res.render('index', { title: `Express ${process.env.OTEL_EXPORTER_OTLP} ${process.env.token}` });
 });
 
 module.exports = router;
